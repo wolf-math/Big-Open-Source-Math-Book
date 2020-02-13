@@ -1,0 +1,601 @@
+\documentclass[11pt]{article}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{fancyvrb}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{sectsty}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{hyperref}
+\usepackage{array}
+\newcommand{\sectionbreak}{\clearpage}
+
+\usepackage{tikz}
+\usepackage{tkz-euclide}
+\usetkzobj{all}
+
+\allsectionsfont{\centering}
+
+\usepackage{draftwatermark}
+	\SetWatermarkText{\copyright wolf-math.com}
+	\SetWatermarkScale{4}
+	\SetWatermarkLightness{1}
+
+\usepackage[margin=1in, headsep=0pt]{geometry}
+\setlength{\parindent}{0cm}
+\pagestyle{empty}
+
+\begin{document}
+wolf-math.com\\
+
+\section*{Systems of Linear Functions}
+
+\subsection*{Goals}
+
+\textbf{SWBAT} solve systems of equations by graphing.\\
+
+\textbf{SWBAT} solve systems of equations by substitution.\\
+
+\textbf{SWBAT} solve systems of equations by elimination.\\
+
+\subsection*{Standards} 
+
+\textbf{Creating Equations \hfill A-CED}\\
+
+Create equations that describe numbers or relationships\\
+
+3.	 Represent constraints by equations or inequalities, and by systems of
+equations and/or inequalities, and interpret solutions as viable or non-
+viable options in a modeling context. For example, represent inequalities
+describing nutritional and cost constraints on combinations of different
+food\\
+
+\subsection*{Connections}
+
+\textbf{Before} we learned about graphing lines and linear functions.  \\
+
+\textbf{Now} we are learning about what happens when many linear function come together.\\
+
+\textbf{Later} we will learn what happens when two linear functions are multiplied; we get a quadratic function.\\
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\section*{System of Equations}
+
+\subsection*{Solving by Graphing}
+
+\textbf{Systems of Equations:} A set of equations that you deal with all at once.
+One method of finding the solution to a system of equations is to find where their graphs overlap.\\
+
+Example: 
+
+\begin{equation*}
+  \begin{cases}
+	y=-2x+5\\
+	
+	y=\frac{2}{3}x-\frac{1}{3}\\
+  \end{cases}
+\end{equation*}
+	
+If we graph both of these equations we get the following graph.\\
+
+\begin{center}
+%\includegraphics[scale=.4]{systems1.jpg}\\
+\end{center}
+
+We can see that the lines overlap at the point $(2,1)$. This is the solution to our system.
+
+\hrulefill
+
+\textbf{You Try:} Solve the system of equations by graphing.\\
+
+\begin{multicols}{2}
+
+\begin{equation*}
+	\begin{cases}
+		y=-x+2\\
+		y=x-2	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=\frac{1}{2}x-2\\
+		y=-3x+5	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\end{multicols}
+	
+\pagebreak
+
+\textbf{No Solution:} If two lines have the same slope that means that they will never intersect, which means there is no solution. 
+
+\begin{multicols}{2}
+\begin{equation*}
+	\begin{cases}
+			y=\frac{5}{3}x-3\\
+
+			y=\frac{5}{3}x+2
+	\end{cases}
+\end{equation*}
+
+%\includegraphics[scale=.5]{graph1.jpg}\\
+
+
+\begin{equation*}
+	\begin{cases}
+			y=\frac{2}{5}x+1\\
+
+			y=\frac{2}{5}x+2
+	\end{cases}
+\end{equation*}
+
+%\includegraphics[scale=.5]{graph1.jpg}\\
+
+
+
+\end{multicols}
+
+\pagebreak
+
+\textbf{Infinite Solutions:} If two lines overlap eachother, then there is infinite solutions. They're the same line! Don't get this confused with \textbf{No Solution} because both of them have the same slope.\\
+
+\begin{equation*}
+	\begin{cases}
+			y=\frac{1}{2}x+1\\
+
+			 y=\frac{1}{2}x+1\\
+	\end{cases}
+\end{equation*}
+
+\begin{center}
+%\includegraphics[scale=.5]{graph1.jpg}
+\end{center}
+
+\pagebreak
+
+\begin{center}
+	\begin{Large}
+		Solving Systems by Substitution\\
+	\end{Large}
+\end{center}
+
+Systems of equations can be solved using a common variable, and setting them equal to one another. 
+
+\begin{equation*}
+	\begin{cases}
+		y=-x+2\\
+		y=x-2	
+	\end{cases}
+\end{equation*}
+
+
+Since both equations begin with $y$, they can be set equal to one another. 
+
+$$-x+2=x-2$$
+
+Now just solve for $x$
+
+$$2x=4$$\ $$x=2$$\
+
+Plug the solution $x=2$ into one of the equations to solve the system\\
+
+$$y=(2)-2=0$$
+
+so the final answer is $(2,0)$
+
+\hrulefill
+
+\textbf{You Try:} Solve the system of equations\\
+
+\begin{equation*}
+	\begin{cases}
+		y=\frac{1}{2}x-2\\
+		y=-3x+5	
+	\end{cases}
+\end{equation*}
+
+\vspace{1cm}
+
+$$\frac{1}{2}x-2=-3x+5$$
+
+
+\pagebreak
+
+\textbf{Solve the Systems of Equations} by graphing.\\
+
+\begin{enumerate}
+	
+	\item \begin{equation*}
+		\begin{cases}
+			y=3x-2\\
+			y=-3x+2	
+		\end{cases}
+	\end{equation*}
+
+\vspace{2in}
+
+	\item \begin{equation*}
+		\begin{cases}
+			y=4x-1\\
+			y=-x+4	
+		\end{cases}
+	\end{equation*}
+	
+\vspace{2in}
+
+	\item \begin{equation*}
+		\begin{cases}
+			y=-\frac{3}{2}x-4\\
+			y=\frac{1}{2}x+4
+		\end{cases}
+	\end{equation*}
+	
+
+
+\end{enumerate}
+
+\section*{Solving by Elimination}
+
+Given a system of equations, we can solve them by elimination. This means looking at the equations \textit{vertically} rather than \textit{horizontally}. Usually when we solve systems by elimination it is when the equations are in \textbf{Standard Form}, that means that they are not in \textbf{Slope Intercept Form}.\\
+
+\textbf{Example:}\\
+
+$\begin{cases}
+	2x+y=9\\
+	3x-y=16
+\end{cases}$
+
+\vspace{.2in}
+
+Since there is a single $y$ for both of these, I can eliminate them by adding them together (the first one is positive and the second one is negative, so adding will cancel them out)\\
+
+
+$
+	2x+y=9\\
+	+\\	
+	3x-y=16\\
+\underline{\hspace{1in}}\\
+	5x+0y=25
+$ 
+
+Since there is a $0y$ that means that it has been \textit{ELIMINATED}. So we can solve for $x$.\\
+
+$5x=25 \rightarrow x=5$\\
+
+Plug in $5$ for $x$ to obtain $y$. $y=-1$
+
+\hrulefill
+
+\textbf{Example 2:} Sometimes we need to do some manipulation.\\
+
+$\begin{cases}
+	4x-3y=25\\
+	-3x+8y=10
+\end{cases}$
+
+\vspace{.2in}
+
+Nothing cancels, but we can multiply by a \textit{scaler} to make one of the numbers the same. Not unlike finding a common denominator.\\
+
+$\begin{cases}
+	(3)(4x-3y=25)\\
+	(4)(-3x+8y=10)
+\end{cases}$
+
+\vspace{.2in}
+
+$\begin{cases}
+	12x-9y=75\\
+	-12x+32y=40
+\end{cases}$
+
+\vspace{.2in}
+
+Now the $12x$ cancels with the $-12x$. So I can add them as...\\
+
+$23y=115 \rightarrow y=5$\\
+
+Now plug $5$ into the equation for $y$ to find the value of $x$\\
+
+$x=10$\\
+
+\pagebreak
+
+\section*{Solving Systems Review}
+
+NAME\underline{\hspace{3in}}
+
+
+
+\textbf{Solve the system by graphing}\\
+
+\begin{multicols}{2}
+
+\begin{equation*}
+	\begin{cases}
+		y=-\frac{4}{3}x+2\\
+		y=\frac{1}{3}x-3	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=\frac{1}{2}x-2\\
+		y=\frac{1}{2}x+1	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=2x-4\\
+		y=\frac{1}{3}x+1	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=\frac{9}{5}x-5\\
+		
+		y=\frac{10}{11}x-5	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\end{multicols}
+
+\pagebreak
+
+\hrulefill
+
+\textbf{Solve the system using substitution}\\
+
+\begin{multicols}{2}
+
+$\begin{cases}
+	y=x\\
+	y=-x-2
+\end{cases}$
+
+\vspace{.3in}
+
+$\begin{cases}
+	y=\frac{1}{4}x-1\\
+	y=2x+19
+\end{cases}$
+
+\vspace{.3in}
+
+$\begin{cases}
+	y=-x+5\\
+	y=-\frac{1}{4}x+1
+\end{cases}$
+
+\vspace{.3in}
+
+$\begin{cases}
+	y=\frac{2}{3}x+4\\
+	y=-\frac{1}{3}x+3
+\end{cases}$
+
+\vspace{.3in}
+
+\end{multicols}
+
+\hrulefill
+
+\textbf{Solve the system using ELIMINATION}\\
+
+\begin{multicols}{2}
+
+$\begin{cases}
+	x-2y=14\\
+	x+3y=9
+\end{cases}$
+
+\vspace{.3in}
+
+$\begin{cases}
+	4x+3y=-1\\
+	5x+4y=1
+\end{cases}$
+
+\vspace{.3in}
+
+$\begin{cases}
+	4x-y=10\\
+	2x+3y=12
+\end{cases}$
+
+\vspace{.3in}
+
+$\begin{cases}
+	x+3y=-5\\
+	4x-y=6
+\end{cases}$
+
+\vspace{.3in}
+
+\end{multicols}
+
+\hrulefill
+
+\textbf{Word Problem:} The admission fee at a small fair is \$1.50 for children and \$4.00 for adults. On a certain day, 2200 people enter the fair and \$5050 is collected. How many children and how many adults attended?
+
+\pagebreak %THIS IS THE NEXT LESSON!!!
+
+\section*{Solving Systems Quiz}
+
+\vspace{12pt}
+
+NAME\underline{\hspace{3in}}\\
+
+
+\textbf{Solve the system by graphing}\\
+
+\begin{multicols}{2}
+
+\begin{equation*}
+	\begin{cases}
+		y=-\frac{1}{2}x+2\\
+		y=\frac{1}{4}x-1	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=-\frac{2}{3}x+4\\
+		y=-\frac{1}{3}x+3	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=2x-3\\
+		y=x+1	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\begin{equation*}
+	\begin{cases}
+		y=3x-6\\
+		
+		y=x	
+	\end{cases}
+\end{equation*}
+
+	
+\begin{center}
+%\includegraphics[scale=.4]{graph1.jpg}
+\end{center}
+
+\end{multicols}
+
+\pagebreak
+
+\hrulefill
+
+\textbf{Solve the system using substitution}\\ % SECOND PAGE Group quiz
+
+\begin{multicols}{2}
+
+$\begin{cases}
+	y=\frac{3}{4}x-9\\
+	y=-3x+6
+\end{cases}$
+
+\vspace{1in}
+
+$\begin{cases}
+	y=\frac{3}{4}x-10\\
+	y=2x+19
+\end{cases}$
+
+\vspace{1in}
+
+$\begin{cases}
+	y=-3x+7\\
+	y=\frac{3}{2}x+4
+\end{cases}$
+
+\vspace{1in}
+
+$\begin{cases}
+	y=x-1\\
+	y=-x+1
+\end{cases}$
+
+\vspace{1in}
+
+\end{multicols}
+
+\hrulefill
+
+\textbf{Solve the system using ELIMINATION}\\
+
+\begin{multicols}{2}
+
+$\begin{cases}
+	2x+3y=20\\
+	-2x+y=4
+\end{cases}$
+
+\vspace{1in}
+
+$\begin{cases}
+	7x+4y=2\\
+	9x-4y=30
+\end{cases}$
+
+\vspace{1in}
+
+$\begin{cases}
+	x-2y=14\\
+	x+3y=9
+\end{cases}$
+
+\vspace{1in}
+
+$\begin{cases}
+	3x-2y=2\\
+	5x-5y=10
+\end{cases}$
+
+\vspace{1in}
+
+\end{multicols}
+
+\hrulefill
+
+\textbf{Extra Credit:} A boat traveled 210 miles downstream and back. The trip downstream took 10 hours. The trip back
+took 70 hours. What is the speed of the boat in still water? What is the speed of the current?
+
+\end{document}

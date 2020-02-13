@@ -1,0 +1,1897 @@
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{color}
+\usepackage{multicol}
+\usepackage{enumitem}
+\usepackage{graphicx}
+\usepackage{sectsty}
+\usepackage{array}
+\usepackage{tikz}
+\usepackage[first=2, last=13]{lcg}
+
+\allsectionsfont{\centering}
+
+\pagestyle{empty}
+
+%\usepackage{draftwatermark}
+%	\SetWatermarkText{\copyright wolf-math.com}
+%	\SetWatermarkScale{4}
+%	\SetWatermarkLightness{1}
+%	\SetWatermarkAngle{180}
+
+\usepackage[margin=1in, headsep=0pt]{geometry}
+\setlength{\parindent}{0cm}
+
+
+\begin{document}
+\newcommand{\random}{\rand\arabic{rand}}
+\setcounter{secnumdepth}{-1}
+
+\tableofcontents
+
+\pagebreak
+
+
+
+Mr. Wolf  \\ wolf-math.com
+
+\section{Exponential Equations \& Logarithms}
+
+
+
+\subsection{Goals}
+
+\textbf{SWBAT} solve a radical equation with index $>2$.\\
+
+\textbf{SWBAT} identify extraneous solutions of radical equations.\\
+
+\textbf{SWBAT} solve an equation that has an exponent by using the reciprocal exponent as the inverse function.\\
+
+\textbf{SWBAT} convert from exponential form to logarithmic form.\\
+
+\textbf{SWBAT} evaluate simple logarithms without a calculator.\\
+
+\textbf{SWBAT} solve exponential and logarithmic equations with logarithms.\\
+
+\textbf{SWBAT} graph logarithmic functions.\\
+
+\textbf{SWBAT} evaluate logarithms using the change of base formula.\\
+
+\textbf{SWBAT} use properties of logarithms to simplify and solve logarithmic equations.\\
+
+\textbf{SWBAT} create inverses of logarithmic functions, and inverses of exponential functions.\\
+
+
+
+\subsection{Standards}
+
+\textbf{Creating Equations \hfill A -CED} 
+
+Create equations that describe numbers or relationships\\
+
+1. Create equations and inequalities in one variable and use them to solve problems. Include equations arising from linear and quadratic functions, and simple rational and exponential functions.\\
+
+\textbf{Interpreting Functions \hfill	F-IF}
+
+Analyze functions using different representations\\
+
+e.	 Graph exponential and logarithmic functions, showing intercepts
+and end behavior, and trigonometric functions, showing period,
+midline, and amplitude.\\
+
+\textbf{Building Functions 	\hfill F-BF}
+
+Build new functions from existing functions\\
+
+5. (+) Understand the inverse relationship between exponents and
+logarithms and use this relationship to solve problems involving
+logarithms and exponents.\\
+
+\textbf{Linear and Exponential Models \hfill	F-LE}
+
+Construct and compare linear and exponential models and solve
+problems\\
+
+4.	 For exponential models, express as a logarithm the solution to 	
+$ab^{ct} = d$ where $a$, $c$, and $d$ are numbers and the base $b$ is $2$, $10$, or $e$;
+evaluate the logarithm using technology.\\
+
+\subsection{Connections}
+
+\textbf{Before} we learned about exponents, exponential functions, and inverse functions. \\
+
+\textbf{Now} we are learning that the inverse function of an exponential function is a logarithm.\\
+
+\let\stdsection\section
+\renewcommand\section{\newpage\stdsection}
+
+\section*{Bell Work}
+
+Solve the equations for the variable.\\
+
+\begin{enumerate}
+
+	\item $5x=60$\\
+	
+	\item $b-12=5$\\
+	
+	\item $p+17=20$\\
+	
+	\item $\frac{h}{3}=9$\\
+	
+	\item $\frac{5}{h}=\frac{20}{12}$\\
+
+\end{enumerate}
+
+\textbf{Question:} How did you solve these problems?\\
+
+\textbf{Answer:} By using the inverse operation.\\
+
+Exponential expressions also have inverse operations, so we can solve for an exponential expression by using the inverse operation. \\
+
+\pagebreak
+
+\section{Solving Radicals and Exponential Equations}
+
+
+\subsection{4-step process}
+
+\begin{enumerate}
+
+	\item Isolate the radical/exponent\\
+	
+	\item Use inverse operation\\
+	
+	\item Solve for the variable\\
+	
+	\item Check your answer\\
+\end{enumerate}
+
+
+
+\textbf{Example:} Solve for the variable\\
+
+\begin{multicols}{2}
+
+$\sqrt{g}+5=14$\\
+
+$\sqrt{g}=9$\\
+
+$g=9^2$\\
+
+$\mathbf{g=81}$\\
+
+\vfill
+
+\columnbreak
+
+$\sqrt{2x}+7=19$\\
+
+$\sqrt{2x}=12$\\
+
+$2x=12^2$\\
+
+$2x=144$\\
+
+$\mathbf{x=72}$\\
+
+\end{multicols}
+
+\textbf{Use the 4-step process to solve for the variable.}\\
+
+\begin{enumerate}
+\begin{multicols}{2}
+	\item $\sqrt{x}+3=5$\\
+	
+	
+	\item $16-y^2=12$\\
+\end{multicols}		
+\end{enumerate}
+
+\vspace{1in}
+
+\textbf{Keep using the 4-step process.} -- These look a lot scarier than they really are\\
+
+
+\begin{enumerate}[resume] 
+\begin{multicols}{2}
+	\item $3\sqrt{2x-3}-4=2$\\
+	
+		
+	\item $(3x-5)^2-14=2$\\
+
+\end{multicols}
+\end{enumerate}
+
+\pagebreak
+
+\section*{Bell Work}
+
+\begin{enumerate}
+\item $2\sqrt{x}=16$\\
+
+\vspace{1in}
+
+\item $3(y-1)^2=300$\\
+
+\vspace{1in}
+
+\item $7\sqrt{2d+1}=35$
+\end{enumerate}
+
+\pagebreak
+
+\section{Indices $>2$}
+
+The inverse operation of a square root is a square (power of 2). The index of a square root is 2, so the inverse operation is the second power.\\
+
+Similarly, if there is any other root greater than 2, the inverse operation will be a power that is the same number as the root's index. The 4-step process still applies.\\
+
+\textbf{Example 1:} $\sqrt[3]{x}=5$\\
+
+$\left(\sqrt[3]{x}\right)^3=5^3$\\ $x=125$\\
+
+\textbf{Example 2:} $\sqrt[5]{b+12}=2$\\
+
+	\vspace{1in}
+
+\textbf{You Try:} Solve the radical equations\\
+
+\begin{enumerate}
+	\begin{multicols}{2}
+\setlength\itemsep{1in}
+	
+		\item $\sqrt[3]{2h-4}=6$\\
+		
+	
+		
+		\item $5b^4=80$\\
+		
+
+		
+		\item $10\sqrt[5]{9x}=30$\\
+		
+
+		
+		\item $3(4d-8)^3=24$\\
+		
+
+					
+		\item $2\sqrt[3]{2k-4}+7=47$\\
+		
+					
+		\item $\sqrt[5]{2r}=-2$\\
+		
+
+	\end{multicols}
+\end{enumerate}
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\section{Solving Radicals and Exponential Equations -- NOTES}
+
+Solve exponential equations by using the inverse operation. \\
+
+\subsection{4-step process}
+
+\begin{enumerate}
+
+	\item 
+	
+	\item 
+	
+	\item 
+	
+	\item 
+\end{enumerate}
+
+
+
+\textbf{Example:} Solve for the variable\\
+
+\begin{multicols}{2}
+
+$\sqrt{g}+5=14$\\
+
+$\sqrt{g}=$\\
+
+$g=$\\
+
+$\mathbf{g=}$\\
+
+\vfill
+
+\columnbreak
+
+$x^2-10=90$
+
+$x^2=$\\
+
+$x=$\\
+
+$\mathbf{x=}$\\
+
+\end{multicols}
+
+\textbf{Use the 4-step process to solve for the variable.}\\
+
+
+\begin{enumerate}
+\begin{multicols}{2}
+	\item $\sqrt{x}+3=5$\\
+	
+	
+	\item $16-y^2=12$\\
+\end{multicols}		
+\end{enumerate}
+
+\vspace{1in}
+
+\textbf{Keep using the 4-step process.} -- These look a lot scarier than they really are\\
+
+
+\begin{enumerate}[resume] 
+\begin{multicols}{2}
+	\item $3\sqrt{2x-3}-4=2$\\
+	
+		
+	\item $(3x-5)^2-14=2$\\
+
+\end{multicols}
+\end{enumerate}
+
+
+
+\pagebreak
+
+\section{Indices $>2$ -- NOTES}
+
+The inverse operation of a square root is a square (power of 2). The index of a square root is 2, so the inverse operation is the second power.\\
+
+Similarly, if there is any other root greater than 2, the inverse operation will be a power that is the same number as the root's index. The 4-step process still applies.\\
+
+\textbf{Example 1:} $\sqrt[3]{x}=5$\\
+
+$\left(\sqrt[3]{x}\right)^3=$\\ 
+
+$x=$\\
+
+\textbf{Example 2:} $b^5+1=2$\\
+
+	\vspace{1in}
+
+\textbf{You Try:} Solve the radical equations\\
+
+\begin{enumerate}
+	\begin{multicols}{2}
+\setlength\itemsep{1in}
+	
+		\item $\sqrt[3]{2h-4}=6$\\
+		
+	
+		
+		\item $5b^4=80$\\
+		
+
+		
+		\item $10\sqrt[5]{9x}=30$\\
+		
+
+		
+		\item $3(4d-8)^3=24$\\
+		
+
+					
+		\item $2\sqrt[3]{2k-4}+7=47$\\
+		
+					
+		\item $\sqrt[5]{2r}=-2$\\
+		
+
+	\end{multicols}
+\end{enumerate}
+
+
+\pagebreak
+
+\begin{center}
+	\begin{Large}
+		Bell Work\\
+	\end{Large}
+\end{center}
+
+\textbf{Solve the radical expression.} Use the 4-step process.\\
+
+\begin{enumerate}
+
+	\item $\sqrt[3]{2x+5}=5$\\
+	
+	
+	\item $\sqrt[4]{4t-4}=4$\\
+	
+	
+	\item $\sqrt[3]{3k+3}-3=3$\\
+	
+	
+	\item $\sqrt{w+12}=\sqrt{2x}$\\
+\end{enumerate}
+
+\pagebreak
+
+\section{Extraneous Solutions}
+In order to understand \textit{extraneous solutions} we need to understand a fundamental idea of the nature of negative numbers.\\
+
+\begin{multicols}{2}
+
+\textbf{Powers of 2 VS. powers of -2}\\
+
+\begin{tabular}{|c|c|}
+
+\hline
+
+$2^2=4$ & $(-2)^2=4$\\
+\hline
+$2^3=8$ & $(-2)^3=-8$\\
+\hline
+$2^4=16$ & $(-2)^4=16$\\
+\hline
+$2^5=32$ & $(-2)^5=-32$\\
+\hline
+$\vdots$ & $\vdots$
+
+\end{tabular}
+
+\textbf{Powers of 3 VS. powers of -3}\\
+
+\begin{tabular}{|c|c|}
+
+\hline
+
+$3^2=9$ & $(-3)^2=9$\\
+\hline
+$3^3=27$ & $(-3)^3=-27$\\
+\hline
+$3^4=81$ & $(-3)^4=81$\\
+\hline
+$3^5=243$ & $(-3)^5=-243$\\
+\hline
+$\vdots$ & $\vdots$
+
+\end{tabular}
+
+\end{multicols}
+
+\vspace{1cm}
+
+hmmm... even powers of negative numbers will result in positive numbers, while the odd powers of negative numbers will result in odd numbers. \\
+
+Let's see what this means practically. Use the 4-step process on the following problem.\\
+
+$\sqrt{x}+18=9$\\
+
+\vspace{1in}
+
+When the solution is plugged back into the original, we get an untrue statement.\\
+
+\vspace{1cm}
+
+\begin{large} \textbf{Big Rule:} \end{large} The solution to a \underline{square root} problem (or any even index) \underline{can't be a negative}!\\
+
+These are called \textit{EXTRANEOUS SOLUTIONS}. They are solutions you get while doing correct math, but they don't fit back into the equation. The proper way to answer the equation is to find the answer, then state that it is an extraneous solution. 
+
+\pagebreak
+
+
+
+\section{Equations with Rational Exponents}
+
+This is why rational exponents are so much cooler than radicals\\
+
+Same basic process as above:
+
+\begin{enumerate}
+
+	\item Isolate the exponent
+	
+	\item Use inverse (reciprocal) operation
+	
+	\item Solve for variable
+	
+	\item Check answer
+\end{enumerate}
+
+Use the reciprocal of the rational exponent to find the answer.\\
+
+\textbf{Example:}
+
+\begin{multicols}{2}
+
+$p^{\frac{3}{2}}-2= 6$\\
+
+$p^{\frac{3}{2}}= 8$\\
+
+$p=8^{\frac{2}{3}}$\\
+
+$p=4$\\
+
+\vfill
+
+\columnbreak
+
+$(w-10)^{\frac{4}{5}}+7= 23$\\
+
+$(w-10)^{\frac{4}{5}}=16$\\
+
+$(w-10)= 16^{\frac{5}{4}}$\\
+
+$w-10=32$\\
+
+$w=42$\\
+
+\end{multicols}
+
+\hrulefill
+
+\textbf{You Try:} Solve the exponential expressions using the 4-step process.\\
+
+\begin{enumerate}
+	\begin{multicols}{2}
+
+	\item $x^{\frac{1}{2}}+3=5$\\
+	
+	\item $16-y^{\frac{1}{2}}=8$\\
+	
+	\item $c^{\frac{3}{2}}=27$\\
+	
+	\item $d^{\frac{2}{5}}=4$\\
+	
+	\item $(t-7)^{\frac{1}{3}}=5$\\
+	
+	\item $2(12p+4)^{\frac{5}{2}}=200,000$
+
+	\end{multicols}
+\end{enumerate}
+
+\pagebreak
+
+\section{Equations with Rational Exponents -- Notes}
+
+This is why rational exponents are so much cooler than radicals\\
+
+Same basic process as above:
+
+\begin{enumerate}
+
+	\item 
+	
+	\item 
+	
+	\item 
+	
+	\item 
+\end{enumerate}
+
+Use the reciprocal of the rational exponent to find the answer.\\
+
+\textbf{Example:}
+
+\begin{multicols}{2}
+
+$p^{\frac{3}{2}}-2= $\\
+
+$p^{\frac{3}{2}}= $\\
+
+$p=$\\
+
+$p=$\\
+
+\vfill
+
+\columnbreak
+
+$(w-10)^{\frac{4}{5}}+7= 23$\\
+
+
+
+\end{multicols}
+
+\hrulefill
+
+\textbf{You Try:} Solve the exponential expressions using the 4-step process.\\
+
+\begin{enumerate}
+	\begin{multicols}{2}
+\setlength\itemsep{.75in}
+	\item $x^{\frac{1}{2}}+3=5$\\
+	
+	\item $16-y^{\frac{1}{2}}=8$\\
+	
+	\item $c^{\frac{3}{2}}=27$\\
+	
+	\item $d^{\frac{2}{5}}=4$\\
+	
+	\item $(t-7)^{\frac{1}{3}}=5$\\
+	
+	\item $2(12p+4)^{\frac{5}{2}}=200,000$\\
+
+	\end{multicols}
+\end{enumerate}
+
+\pagebreak
+
+\section{Solving Radicals Quiz Review}
+
+Mr. Wolf \hfill NAME:\underline{\hspace{3in}}\\ 
+Pre-Calculus \\ 
+$MC^2 High$ \hfill DATE:\underline{\hspace{2in}}\\
+2015-2016
+
+
+
+\textbf{Solve the radical equations:} Use the 4-step process to solve the square-root equation.\\
+
+\begin{enumerate}
+	
+		\item $\sqrt{3p-2}=10$\\
+		
+		\item $\sqrt{6f}=12$\\
+		
+		\item $5\sqrt{9y+4}=125$\\
+		
+		\item $7\sqrt{r}-6=43$\\
+		
+		\item $8\sqrt{11s}=88$\\
+	
+\end{enumerate}
+
+\hrulefill
+
+\textbf{Solve the radical equations:} Use the 4-step process to solve the radical equations. These \textbf{ALL} have an index greater than 2.\\
+
+\begin{enumerate}[resume]
+
+	\item $\sqrt[3]{8t}=4$\\
+	
+	
+	\item $\sqrt[3]{2x+15}=5$\\
+	
+	
+	\item $\sqrt[4]{4t}+2=4$\\
+	
+	
+	\item $\sqrt[3]{6k+3}-3=3$\\
+	
+	
+	\item $\sqrt[4]{w+12}=2$\\
+
+\end{enumerate}
+
+\pagebreak
+
+\textbf{Solve the rational exponential equations:} Use the 4-step process to solve.\\
+
+\begin{enumerate}[resume]
+
+	\item $x^{\frac{1}{2}}+3=6$\\
+	
+	\item $2y^{\frac{1}{2}}=8$\\
+	
+	\item $2c^{\frac{3}{2}}=16$\\
+	
+	\item $d^{\frac{3}{5}}=64$\\
+	
+	\item $(t-7)^{\frac{1}{3}}=6$\\
+
+
+\end{enumerate}
+
+\pagebreak
+
+\section{Solving Radicals QUIZ -- Open Note}
+
+Mr. Wolf \hfill NAME:\underline{\hspace{3in}}\\ 
+Pre-Calculus \\ 
+$MC^2 High$ \hfill DATE:\underline{\hspace{2in}}\\
+2015-2016
+
+
+
+\textbf{Solve the radical equations:} Use the 4-step process to solve the square-root equation.\\
+
+\begin{enumerate}
+	
+		\item $\sqrt{3p-18}=9$\\
+		
+		\item $\sqrt{5f}=10$\\
+		
+		\item $5\sqrt{2y-1}=35$\\
+		
+		\item $7\sqrt{r}=42$\\
+		
+		\item $11\sqrt{16s}=88$\\
+	
+\end{enumerate}
+
+\hrulefill
+
+\textbf{Solve the radical equations:} Use the 4-step process to solve the radical equations. These \textbf{ALL} have an index greater than 2.\\
+
+\begin{enumerate}[resume]
+
+	\item $\sqrt[3]{t}=1$\\
+	
+	
+	\item $\sqrt[3]{2x}=10$\\
+	
+	
+	\item $\sqrt[4]{9t}+12=15$\\
+	
+	
+	\item $\sqrt[3]{6k+6}-3=3$\\
+	
+	
+	\item $\sqrt[4]{w-3}=2$\\
+
+\end{enumerate}
+
+\pagebreak
+
+\textbf{Solve the rational exponential equations:} Use the 4-step process to solve.\\
+
+\begin{enumerate}[resume]
+
+	\item $x^{\frac{1}{2}}+3=7$\\
+	
+	\item $2y^{\frac{1}{2}}=10$\\
+	
+	\item $2c^{\frac{2}{3}}=18$\\
+	
+	\item $d^{\frac{5}{3}}=32$\\
+	
+	\item $(t-7)^{\frac{1}{3}}=5$\\
+
+
+\end{enumerate}
+
+\hrulefill
+
+\textbf{List of Powers}\\
+
+\begin{multicols}{3}
+
+$2^2=4$\\
+
+$3^2=9$\\
+
+$4^2=16$\\
+
+$5^2=25$\\
+
+$6^2=36$\\
+
+$7^2=49$\\
+
+$8^2=64$\\
+
+$9^2=81$\\
+
+$10^2=100$\\
+
+\vfill
+
+$2^3=8$\\
+
+$3^3=27$\\
+
+$4^3=64$\\
+
+$5^3=125$\\
+
+$6^3=216$\\
+
+$7^3=343$\\
+
+$8^3=512$\\
+
+$9^3=729$\\
+
+$10^3=1000$\\
+
+\vfill
+
+$2^4=16$\\
+
+$3^4=81$\\
+
+$4^4=256$\\
+
+$5^4=625$\\
+
+$6^4=1296$\\
+
+$7^4=2401$\\
+
+$8^4=4096$\\
+
+$9^4=6561$\\
+
+$10^4=10000$\\
+
+\vfill
+
+\end{multicols}
+
+
+
+
+
+\pagebreak
+
+\section{Logarithm Pre-Assessment}
+
+Mr. Wolf \hfill NAME:\underline{\hspace{3in}}\\ 
+Pre-Calc \\ 
+MC$^2$ HS \hfill DATE:\underline{\hspace{2in}}\\
+2015-2016\\
+
+\textbf{Directions:} Answer the questions below to the best of your ability.
+
+\begin{enumerate}
+	\item Have you ever heard the word ``logarithm" before?\\
+	
+	\item Do you know what the word ``logarithm'' means?\\
+	
+	\item Do you know how logarithms are related to exponents?\\
+	
+
+	\item What is $x$ if $2^{x}=8$\\
+
+	
+	\item Did you know that by solving the last question you did a logarithm?\\
+
+\end{enumerate}
+
+\vspace{1cm}
+
+Mr. Wolf \hfill NAME:\underline{\hspace{3in}}\\ 
+Pre-Calc \\ 
+MC$^2$ HS \hfill DATE:\underline{\hspace{2in}}\\
+2015-2016\\
+
+\textbf{Directions:} Answer the questions below to the best of your ability.
+
+\begin{enumerate}
+	\item Have you ever heard the word "logarithm" before?\\
+	
+	\item Do you know what the word "logarithm" means?\\
+	
+	\item Do you know how logarithms are related to exponents?\\
+	
+	\item What is $x$ if $2^{x}=8$\\
+
+	\item Did you know that by solving the last question you did a logarithm?\\
+
+\end{enumerate}
+
+
+
+
+\section{Meaning of Logarithms}
+
+\textbf{Logarithms} are the \textit{inverse functions} of exponential functions. They help us solve for an exponent.\\
+
+If I have $log_{b}(c)$, this is read "log base b of c."\\
+
+The base $b$ is the same base as the base of an exponent. The answer you get when you evaluate this is the same as the exponent. The relationship between between a $log$ and an exponent is the same as the relationship between division and multiplication.\\
+
+$$log_{3}(81)=4 \longleftrightarrow 3^4=81$$
+
+and
+
+$$log_{10}(100)=2 \longleftrightarrow 10^2=100$$\\
+
+\hrulefill
+
+\textbf{Example 1:} Convert $log_{3}(81)=4$ to exponential form.\\
+
+\vspace{1cm}
+
+\textbf{Example 2:} Convert $4^2=16$ to logarithmic form.\\
+
+\vspace{1cm}
+
+\textbf{Example 3:} Convert $log_{x}(10)=3$ to exponential form.\\
+
+\vspace{1cm}
+
+A logarithms is called a \textit{transcendental function}. One thing that means is $\frac{log_{b}(a)}{log_{c}(d)} \neq \frac{_ba}{_cd}$\\
+
+\hrulefill
+
+\textbf{Guided Practice:} Convert from a logarithm to an exponential, or from an exponential to logarithm.\\
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\setlength\itemsep{1cm}
+	
+	\item $log_{10}1000=3$\\
+	
+	\item $log_m{81}=2$\\
+	
+	\item $10^{2}=100$\\
+	
+	\item $d^{15}=34$\\
+
+\end{enumerate}
+\end{multicols}
+
+\pagebreak
+
+\textbf{You Try:} Convert the logarithms to exponential form, or from exponential form to logarithmic form.\\
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\setlength\itemsep{1cm}
+
+	\item $log_{7}(49)=2$\\	
+		
+	\item $log_{6}(216)=3$\\
+	
+	\item $log_{5}(625)=4$\\
+		
+	\item $log_{12}(144)=2$\\
+	
+	\item $log_{4}(64)=3$\\
+	
+	\item $10^6=1,000,000$\\
+	
+	\item $11^2=121$\\
+	
+	\item $2^8=256$\\
+	
+	\item $3^5=243$\\
+	
+	\item $5^3=125$\\
+\end{enumerate}
+\end{multicols}
+
+
+\textbf{You determine:} Are the following true statements?\\
+
+\begin{enumerate}[resume]
+	\setlength\itemsep{2cm}
+	
+	\item $log_{64}(8)=2$\\
+	
+	\item $log_{5}(25)=2$\\
+	
+	\item $log_{3}(3)=27$\\
+
+\end{enumerate}
+
+\pagebreak
+
+\section{Meaning of Logarithms -- Notes}
+
+\textbf{Logarithms} are the \textit{inverse functions} of exponential functions. They help us solve for an exponent.\\
+
+If I have $log_{b}(c)$, this is read "log base b of c."\\
+
+The base $b$ is the same base as the base of an exponent. The answer you get when you evaluate this is the same as the exponent. The relationship between between a $log$ and an exponent is the same as the relationship between division and multiplication.\\
+
+$$log_{3}(81)=4 \longleftrightarrow $$
+
+and
+
+$$=2 \longleftrightarrow 10^2=100$$\\
+
+\hrulefill
+
+\textbf{Example 1:} Convert $log_{3}(81)=4$ to exponential form.\\
+
+\vspace{1cm}
+
+\textbf{Example 2:} Convert $4^2=16$ to logarithmic form.\\
+
+\vspace{1cm}
+
+\textbf{Example 3:} Convert $log_{x}(10)=3$ to exponential form.\\
+
+\vspace{1cm}
+
+A logarithms is called a \textit{transcendental function}. One thing that means is $\frac{log_{b}(a)}{log_{c}(d)} \neq \frac{_ba}{_cd}$\\
+
+\hrulefill
+
+\textbf{Guided Practice:} Convert from a logarithm to an exponential, or from an exponential to logarithm.\\
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\setlength\itemsep{1cm}
+	
+	\item $log_{10}1000=3$\\
+	
+	\item $log_m{81}=2$\\
+	
+	\item $10^{2}=100$\\
+	
+	\item $d^{15}=34$\\
+
+\end{enumerate}
+\end{multicols}
+
+\pagebreak
+
+\textbf{You Try:} Convert the logarithms to exponential form, or from exponential form to logarithmic form.\\
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\setlength\itemsep{1cm}
+
+	\item $log_{7}(49)=2$\\	
+		
+	\item $log_{6}(216)=3$\\
+	
+	\item $log_{5}(625)=4$\\
+		
+	\item $log_{12}(144)=2$\\
+	
+	\item $log_{4}(64)=3$\\
+	
+	\item $10^6=1,000,000$\\
+	
+	\item $11^2=121$\\
+	
+	\item $2^8=256$\\
+	
+	\item $3^5=243$\\
+	
+	\item $5^3=125$\\
+\end{enumerate}
+\end{multicols}
+
+
+\textbf{You determine:} Are the following true statements?\\
+
+\begin{enumerate}[resume]
+	\setlength\itemsep{2cm}
+	
+	\item $log_{64}(8)=2$\\
+	
+	\item $log_{5}(25)=2$\\
+	
+	\item $log_{3}(3)=27$\\
+
+\end{enumerate}
+
+\subsection{Evaluating (easy) Logarithms}
+
+Evaluating logarithms is just about finding the number that would make the exponent work.\\
+
+\begin{center} $log_{3}(9)=$ (3 to what power is 9?)\end{center}
+
+\textbf{You Try:} Evaluate the logarithm.\\
+
+\begin{enumerate}
+	\setlength\itemsep{1cm}
+	
+	\item $log_{2}(32)=$\\
+	
+	\item $log_{3}(81)=$\\
+	
+	\item $log_{4}(16)=$\\
+	
+	\item $log_{5}(25)=$\\
+	
+	\item $log_{13}(1)=$\\
+\end{enumerate}
+
+\clearpage
+
+
+
+\begin{enumerate}
+
+	\item $log_{20}(400)=2y$\\
+	
+	\item $log_{2}(16)=2x$\\
+	
+	\item $log_{4}(4096)=3t$\\
+	
+	\item $log_{3}(729)=5k$\\
+\end{enumerate}
+
+\section*{Bell Work}
+
+Convert form.
+
+\begin{enumerate}
+
+	\item $log_2(1024)=10$\\
+	
+	\item $log_8(512)=3$\\
+	
+	\item $log_{10}(1)=0$\\
+	
+	\item $3^6=729$\\
+	
+	\item $5^4=625$\\
+	
+	\item $7^2=49$\\
+
+\end{enumerate}
+
+
+
+\section{Properties of Logarithms}
+
+\begin{center}
+\def\arraystretch{2}
+\begin{tabular}{| l | c | c |}
+
+\hline
+	Product Property  & $log_{b}(m \cdot n)= log_{b}(m) + log_{b}(n)$  \\ \hline
+	Quotient Property & $log_{b}\left(\frac{m}{n} \right) = log_{b}(m)-log_{b}(n)$\\ \hline
+	Power Property & $log_{b}\left( m^{n} \right) = n \cdot log_{b}(m)$\\ \hline
+
+\end{tabular}
+\end{center}
+
+hmm, they look kinda like the properties of exponents...\\
+
+\textbf{Examples:} Expand the logarithmic expressions\\
+
+Product Property: $$log_{4}(2 \cdot 16)= $$\\
+
+Quotient Property: $$log_{10}\left(\frac{90}{7} \right)=$$\\
+
+Power Property: $$log_{17}(14^3)=$$ \\
+
+\hrulefill
+
+\textbf{Guided Practice:} Use the properties of logarithms to expand the expressions.\\
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\setlength\itemsep{1cm}
+
+	\item  $log_{2}(2 \cdot x)=$\\
+	
+	\item $log_{5}\left( \frac{6}{25} \right)=$\\
+	
+	\item $log_{10} \left(4^{12} \right) =$\\
+	
+	\item $log(2x^3)=$\\
+	
+	\item $log_{3}\left(\frac{5x}{3y}\right)=$\\
+	
+	\item $log_{5}\left(\frac{8f}{9}\right)^2=$\\
+
+\end{enumerate}
+\end{multicols}
+
+\clearpage
+
+\textbf{Guided Practice:} Use the properties of logarithms to condense the expressions.\\
+
+
+\begin{enumerate}
+\begin{multicols}{2}
+	\setlength\itemsep{1cm}
+	
+	\item $log_{6}(4) + log_{6}(9)=$
+	
+	\item $log_{3}(10) - 7log_{3}(11)=$
+	
+	\item $5log_{10}(8) + 5log{10}(19)=$
+	
+	\item $7log(x) - 3log(y) = $
+	
+	\item $11log(h) + 11log(k) = $
+	
+	\item $2log(r) - log(2) = $
+\end{multicols}
+\end{enumerate}
+
+\hrulefill
+
+\subsection{Proof of Properties of Logarithms}
+
+\vspace{6pt}
+
+\begin{Large}
+$$log_{b}(b^{x})=x$$\\
+\end{Large}
+
+if $b^{x}=y$\\
+
+$\Rightarrow log_{b}(y)=x$\\
+
+since $y=b^x$\\
+
+$\Rightarrow log_{b}(b^{x})=log_{b}(y)=x$
+
+\hrulefill
+
+\begin{Large}
+
+$$log_b(a)=x \hspace{1cm} log_b(c)=y$$
+
+$$b^x=a \hspace{.7cm} b^y=c$$
+
+\end{Large}
+
+\vspace{6pt}
+
+$a \cdot c = b^x \cdot b^y \Longrightarrow a \cdot c = b^{(x+y)}$ \\
+
+$log_b(a \cdot c) = log_b\left(b^{(x+y)}\right)$\\
+
+$log_b(a \cdot c) = x+y$\\
+
+since $x=log_b(a)$, and $y=log_b(c)$\\
+
+$log_b(a \cdot c) = log_b(a)+log_b(c)$
+
+
+
+
+
+\section{Change of Base Formula}
+
+Calculators only have buttons for $log_{10}$, written \texttt{log}, and $log_e$, written \texttt{ln}. \\
+
+So how can we take $log_2$ using our calculators? If it's hard we need to use our calculators!\\
+
+We use the \textbf{Change of Base Formula}!!!\\
+
+$$log_{b}(a)=\frac{log_{c}(a)}{log_{c}(b)}$$\\
+
+
+
+
+\subsection{Proof of Change of Base}
+
+Given $$log_{a}(x)=y \Longleftrightarrow a^y=x$$
+
+Want to find $$log_{b}(x)$$
+
+Since $$x=a^y \Longrightarrow log_{b}(x)=log_{b}(a^y)$$
+
+Power property $$log_{b}(x)=ylog_{b}(a)$$
+
+Solving $$y=\frac{log_{b}(x)}{log_{b}(a)}$$\\
+
+\subsection{Common Logs \& Natural Logs}
+
+Most logarithms, like the ones on your calculator, are either $log_{10}$, written simply as $log$, or $log_{e}$, written as $ln$. $log_{10}$ is called common log, and $ln$ is called a natural log. Most calculators have buttons for common logs and natural logs, but not any other type of log.\\
+
+\textbf{Evaluate} on your calculator\\
+
+\begin{enumerate}
+	\item $ln(23)=$ \hspace{2in} $e^{ans}=$\\
+	
+	\item $log(19)=$ \hspace{2in} $10^{ans}=$\\
+\end{enumerate}
+
+\pagebreak
+
+\subsection{Change of Base Practice}
+
+\textbf{Examples:}
+\begin{enumerate}
+
+\item[Example 1:] $log_6(7776)=\frac{log(7776)}{log(6)}=$\\
+
+\item[Example 2:] $log_{18}(5832)=$\\
+
+\item[Example 3:] $log_{7}(200)=$\\
+
+\end{enumerate}
+
+\hrulefill
+
+\textbf{You Try:}\\
+
+\begin{multicols}{2}
+\begin{enumerate}
+	\setlength\itemsep{1.5cm}
+
+	\item $log_{3}(6561)=$\\
+	
+	\item $log_{4}(1024)=$\\
+	
+	\item $log_{5}(3125)=$\\
+	
+	\item $log_{12}(600)=$\\
+	
+	\item $log_{10}(95)=$\\
+	
+	\item $log_{2}(\frac{1}{32})=$\\
+
+	\item $log_{\frac{2}{3}}(10)=$\\
+	
+	\item $log_{1.5}(5.0625)=$\\
+	
+	\item $log_{2}(64)=$\\
+	
+	\item $log_{4}(64)=$\\
+	
+	\item $log_{8}(64)=$\\
+	
+	\item $log_{1}(2)=$	
+	
+
+\end{enumerate}
+\end{multicols}
+
+\section{Review of Properties of Logarithms}
+
+\subsection{Product Property}
+
+\begin{enumerate}
+	\setlength\itemsep{1.cm}
+\begin{multicols}{2}
+
+	\item $log(8 \cdot 9)=$\\
+	
+	\item $log(2 \cdot 8)=$\\
+	
+	\item $log_{3}(27x)=$\\
+	
+	\item $log_{5}(50p)=$\\
+	
+	\end{multicols}
+	\end{enumerate}
+	
+		
+		
+\subsection{Quotient Property}
+	
+	\begin{enumerate}[resume]
+		\setlength\itemsep{1.cm}
+	\begin{multicols}{2}
+	
+	\item $log\left(\frac{4}{5}\right)=$\\
+	
+	\item $log\left(\frac{9}{k}\right)=$\\
+	
+	\item $log\left(\frac{g}{h}\right)=$\\
+		
+	\item $log\left(\frac{5j}{4}\right)=$\\
+	
+	\end{multicols}
+	\end{enumerate}
+	
+		
+		
+\subsection{Power Property}
+		
+	\begin{enumerate}[resume]
+		\setlength\itemsep{1.cm}
+	\begin{multicols}{2}
+		
+	\item $log(7^2)=$\\
+	
+	\item $log(k^8)=$\\
+	
+	\item $log(2f^7)=$\\
+	
+	\item $log\frac{5^x}{3}=$\\
+	
+	\end{multicols}
+	\end{enumerate}
+	
+		
+		
+\subsection{Condense}	
+
+	\begin{enumerate}[resume]
+		\setlength\itemsep{1.cm}
+	\begin{multicols}{2}
+	
+	\item $3log_{2}(2) \cdot \log_{2}(y)=$\\
+	
+	\item $2log_{10}(x)-log_{10}(y) =$\\
+
+	\item $log_{3}(2)+log_{3}(13.5)=$\\
+	
+	\item $3log_{2}(x)+log_{2}(y)-7log_{2}(z)=$\\
+
+\end{multicols}
+\end{enumerate}
+
+\subsection{Change of Base Formula}
+
+	\begin{enumerate}[resume]
+	\begin{multicols}{2}
+	
+	
+	\item $log_{5}(3125)=$
+
+	\item $log_{13}(28561)=$
+	
+	\end{multicols}
+	\end{enumerate}
+
+\section{Logs: The Inverse of Exponents}
+
+By definition, logarithms are the inverse of exponents. Therefore, if we make an exponential function, $f(x)=b^x$, and its inverse logarithmic function, $f^{-1}(x)=log_{b}(x)$, then...
+
+\begin{large}
+$$[f \circ f^{-1}](x)= b^{log_{b}(x)}=x$$
+
+and
+
+$$[f^{-1} \circ f](x)= log_{b}(b^x)=x$$\\
+\end{large}
+
+
+\hrulefill
+
+\subsection{Proof}
+
+\begin{large}
+$$b^{log_{b}(x)}=x$$
+
+if $log_{b}(x)=y$\\
+
+$\rightarrow b^y=x$\\
+
+Since $y=log_{b}(x)$\\
+
+$\rightarrow b^{log_{b}(x)}=b^y=x$\\
+
+$$log_{b}(b^{x})=x$$\\
+
+if $b^{x}=y$\\
+
+$\rightarrow log_{b}(y)=x$\\
+
+since $y=b^x$\\
+
+$\rightarrow log_{b}(b^{x})=log_{b}(y)=x$
+
+\end{large}
+
+
+
+\pagebreak
+
+\textbf{What you need to know is} that when the base of the log is the same as the base of the exponent, they cancel out. This could have been deduced from the power property of exponents.\\
+
+\textbf{Example 1:} $log_{3}\left(3^{2x} \right) = 2x$\\
+
+\hspace{.75in} $log_{3}$ cancels out exponent base $3$\\
+
+\textbf{Example 2:} $5^{log_{5}(19)}= 19$\\
+
+\hspace{.75in} Exponential base 5 cancels out $log_{5}$\\
+
+\textbf{Example 3:} $log_{3}9^{x}= $\\
+
+\hspace{.75in} What cancels out? The $log$ and the exponent have different bases!\\
+
+\hrulefill
+
+\textbf{You Try:} Simplify the expressions.\\
+
+
+\begin{enumerate}
+	\setlength\itemsep{1.3cm}
+\begin{multicols}{2}
+	
+	\item $log_{5} \left( 5^{30} \right) =$\\
+
+	\item $log_{7} \left( 7^{3g} \right) =$\\
+	
+	\item $log_{11} \left( 11^{2k+15} \right) = $\\
+		
+	\item $log_{4} \left( 16^{10} \right) =$\\
+	
+	\item $log_{3} \left( 27^{5x} \right) =$\\
+	
+	\item $9^{log_{9}(29)}=$\\
+	
+	\item $2^{log_{2}(5p)}=$\\
+	
+	\item $6^{log_{6}(3x)}=$\\
+	
+	\item $100^{log(5y)}=$\\
+	
+	\item $81^{log_{9}(7t-2)}=$\\	
+
+\end{multicols}
+\end{enumerate}
+\vspace{.75cm}
+\textbf{Challenge Problem:} $5^{log_{25}(5h+10)}=$
+
+\section{Using Logarithms to Solve Exponential Equations}
+
+\textbf{Property of Equality for Exponential Equations}\\
+
+If we have $b^x=y$, $b$ and $y$ are real numbers, and $x$ is unknown, we can solve for $x$ by taking the logarithm of both sides base $b$.\\
+
+$log_{b} \left( b^{x} \right) = log_{b}(y)$\\
+
+$x=log_{b}(y)$ -- Use the \textbf{change of base formula} to solve on calculator\\
+
+$x=\frac{log(y)}{log(b)}$\\
+
+\hrulefill
+
+\textbf{Example 1:} $7^{x}=85$ 
+
+$$log_{7} \left( 7^{x} \right) = log_{7}(85)$$
+
+$$\Rightarrow x=log_{7}(85)$$ 
+
+$$x=\frac{log(85)}{log(7)}=2.283....$$
+
+\textbf{Example 2:} $8^{k}=36$\\
+
+\vspace{1in}
+
+\hrulefill
+
+\textbf{You Try:}\\
+
+\begin{enumerate}
+	\setlength\itemsep{1.5cm}
+\begin{multicols}{2}
+
+\item $3^x=7$\\
+
+\item $6^{2x}=145$\\
+
+\item $4 \cdot 2^x=108$\\
+
+\item $3^{3p}=729$\\
+
+\end{multicols}
+\end{enumerate}
+
+
+
+\section{Using Exponents to Solve Logarithmic Equations}
+
+To solve a logarithmic equation, identify the base of the logarithm and set everything as an exponent to that base.\\
+
+$$log_{b}(x)=y$$
+
+$$\Rightarrow b^{log_{b}(x)}=b^y$$
+
+$$x=b^y$$
+
+\hrulefill
+
+\textbf{Example 1:} $log_{3}(x-1)=2$
+
+$$3^{log_{3}(x-1)}=3^2$$
+
+$$(x-1)=9$$
+
+$$x=10$$
+
+\textbf{Example 2:} $log_{6}(3x)=3$
+
+\vspace{1in}
+
+\hrulefill
+
+\textbf{You Try:}\\
+
+\begin{enumerate}
+	\setlength\itemsep{1.5cm}
+\begin{multicols}{2}
+
+	\item $log_{4}(2x-3)=3$\\
+	
+	\item $log_{6}(5x)=3$\\
+	
+	\item $log_{2}(x-7)=5$\\
+	
+	\item $ln(2x-7)=1$\\
+	
+	
+\end{multicols}
+\end{enumerate}
+
+
+
+\section{Graphing Logarithmic Functions} 
+
+Since logs are the inverses of exponentials, we can graph them easily. Remember the \textit{domain} and \textit{range} of an inverse function is just the opposite of the regular function.\\
+
+%\begin{center}\includegraphics[scale=.5]{logexp.png}\end{center}
+
+To graph a simple logarithmic function follow the following steps.
+
+\begin{enumerate}
+	\item Get the inverse.
+\end{enumerate}
+
+\section{Newton's Law of Cooling}
+
+\subsection*{Crime Scene}
+
+Detective Bolwaire is called to the scene of a crime where the dead body of Kameron Coleman has just been found. She arrives on the scene at 10:23 pm and begins her investigation. Immediately, the temperature of the body is taken and is found to be $80^{\circ}$F. Detective Bolwaire checks the programmable thermostat and finds that the room has been kept at a constant $68^{\circ}$F for the past 3 days.\\
+
+After evidence from the crime scene is collected, the temperature of  Kam's body is taken once more and found to be $78.5^{\circ}$F. This last temperature reading was taken exactly one hour after the first one. The next day the detective is asked by another investigator, “What time did our victim die?” Assuming that the victim’s body temperature was normal ($98.6^{\circ}$F) prior to death, what is her answer to this question? Newton's Law of Cooling can be used to determine a victim's time of death.\\
+
+\subsection*{Newton's Law of Cooling}
+
+Newton’s Law of Cooling describes the cooling of a warmer object to the cooler temperature of the environment. Specifically we write this law as,
+
+$$T(t) = T_e + (T_0 - T_e ) e^{-kt}$$
+
+where $T(t)$ is the temperature of the object at time $t$, $T_e$ is the constant temperature of the environment, $T_0$ is the initial temperature of the object, and $k$ is a constant that depends on the material properties of the object.\\
+
+To organize our thinking about this problem. We want to know the time Kameron died. In particular, we know the investigator arrived on the scene at 10:23 pm, which we will call $\tau$ hours after death. At 10:23 (i.e. $\tau$ hours after death), the temperature of the body was found to be $80^{\circ}$F. One hour later, $\tau + 1$ hours after death, the body was found to be $78.5^{\circ}$F. Our known constants for this problem are, $T_e = 68^{\circ}$F and $T_0 = 98.6^{\circ}$F.\\
+
+\vfill
+
+\textbf{What time did  Kameron die?}
+
+
+\section{Test Review}
+
+\vspace{12pt}
+
+Mr. Wolf \hfill NAME:\underline{\hspace{3in}}\\ 
+Pre-Calculus \\ 
+CMSD-$MC^2$ STEM HS \hfill DATE:\underline{\hspace{2in}}\\
+2015-2016\\
+
+\textbf{Convert from exponential form to logarithmic form}\\
+
+\begin{enumerate}
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $2^{10}=1024$\\
+	
+	\item $4^{2.5}=32$\\
+	
+	\item $3^4=81$\\
+	
+	\item $5^3=125$\\
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Convert from logarithmic form to exponential form.}\\
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $\log_{3}(81)=4$\\
+	
+	\item $\log_{10}(1000)=3$\\
+	
+	\item $\log_{\frac{1}{2}}(16)=-4$\\
+	
+	\item $\log_{5}(\frac{1}{25})=-2$\\
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Answer \underline{True} or \underline{False}.}
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $\log_{7}(49)=2$\\
+	
+	\item $\log_{2}(2)=4$\\
+	
+	\item $\log_{32}(2)=\frac{1}{5}$\\
+	
+	\item $\log_{9}(3)=-2$\\
+
+\end{multicols}
+\end{enumerate}
+
+\pagebreak
+
+\textbf{Expand the logarithms.}
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+		\item $\log(3x^5)$\\
+		
+		\item $\log_{5}\left(\frac{25}{x^2} \right)$\\
+		
+		\item $\log_{6}(8g)^{3}$\\
+		
+		\item $\log(7t)$\\
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Change of Base Formula-} Two part question. Set up the change of base formula, then write the answer using your calculator.\\
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $\log_{16}(1024)$\\
+	
+	\item $\log_{6}(1296)$\\
+	
+	\item $\log_{512}(8)$\\
+	
+	\item $\log_{\frac{1}{2}}(2)$\\
+
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Solve the equation} -- Set it up and solve on the calculator. Use either of the 2 ways we learned in class.\\
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+
+	\item $10^{2x-4}=10000$\\
+	
+	\item $6\log_{3}(7y+5)=30$\\
+	
+
+\end{multicols}
+\end{enumerate}
+
+\section{Test}
+
+\vspace{12pt}
+
+Mr. Wolf \hfill NAME:\underline{\hspace{3in}}\\ 
+Pre-Calculus \\ 
+$MC^2$ High School \hfill DATE:\underline{\hspace{2in}}\\
+2015-2016\\
+
+\textbf{Convert from exponential form to logarithmic form} (4 points each)\\
+
+\begin{enumerate}
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $2^{8}=256$\\
+	
+	\item $9^{2.5}=243$\\
+	
+	\item $4^5=1024$\\
+	
+	\item $9^2=81$\\
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Convert from logarithmic form to exponential form.} (4 points each)\\
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $log_{5}(125)=3$\\
+	
+	\item $log_{10}(10000)=4$\\
+	
+	\item $log_{\frac{1}{2}}(32)=-5$\\
+	
+	\item $log_{6}(\frac{1}{216})=-3$\\
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Answer \underline{True} or \underline{False}.} (4 points each.)
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $log_{6}(36)=2$\\
+	
+	\item $log_{4}(2)=16$\\
+	
+	\item $log_{4}(2)=\frac{1}{2}$\\
+	
+	\item $log_{8}(3)=-3$\\
+
+\end{multicols}
+\end{enumerate}
+
+\pagebreak
+
+\textbf{Expand the logarithms.} (4 points each.)
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+		\item $log(j^5)$\\
+		
+		\item $log_{6}\left(\frac{36}{13} \right)$\\
+		
+		\item $log_{6}(7f)^{3}$\\
+		
+		\item $log\left(\frac{t^3}{p^2}\right)$\\
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Change of Base Formula-} Two part question. Set up the change of base formula, then write the answer using your calculator. (4 points each.)\\
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+	\item $log_{16}(4913)=$\\
+	
+	\item $log_{8}(4096)=$\\
+	
+	\item $log_{512}(4)=$\\
+	
+	\item $log_{\frac{1}{3}}(9)=$\\
+
+
+\end{multicols}
+\end{enumerate}
+
+\textbf{Solve the equation} -- Set it up and solve on the calculator. Use either of the 2 ways we learned in class. (5 points each.)\\
+
+\begin{enumerate}[resume]
+\begin{multicols}{2}
+	\setlength\itemsep{2cm}
+	
+
+	\item $12^{x+5}=248832$\\
+	
+	\item $10^{y^2}=10000$\\
+	
+
+
+\end{multicols}
+\end{enumerate}
+
+\vspace{1in}
+
+
+\hrulefill
+
+\textbf{Extra Credit:} Simplify the expression (5 points) $$5^{log_{25}(x^2)}=$$
+
+\section{Bell Work}
+
+
+\begin{enumerate}
+	\item Convert: $7^2=49$\\
+	
+	\item Convert: $log_{4}(64)=3$\\
+	
+	\item Expand: $log_{2}(16x^3)$\\
+	
+	\item Evaluate: $log_{3}(100)$\\
+	
+	\item Solve: $10^p= \pi$
+\end{enumerate}
+
+
+\clearpage
+
+$$7000 = 5000e^{5x}$$
+
+$$\frac{7}{5} = e^{5x}$$
+
+$$ln\frac{7}{5} = 5x$$
+
+$$x = \frac{ln\frac{7}{5}}{5} \approx 0.067$$
+
+\end{document}
