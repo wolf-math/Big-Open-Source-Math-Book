@@ -1,4 +1,4 @@
-# Big-Open-Source-Math-Book
+# Big Open Source Math Book
 
 The Big Open Source Math Book (BOSMB) is a compilation of all of the lesson plans I've ever written as a teacher of high school mathematics, and hten some.
 
