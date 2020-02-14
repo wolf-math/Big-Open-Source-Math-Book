@@ -1,0 +1,40 @@
+\contentsline {section}{Exponential Equations \& Logarithms}{3}
+\contentsline {subsection}{Goals}{3}
+\contentsline {subsection}{Standards}{3}
+\contentsline {subsection}{Connections}{4}
+\contentsline {section}{Solving Radicals and Exponential Equations}{6}
+\contentsline {subsection}{4-step process}{6}
+\contentsline {section}{Indices $>2$}{8}
+\contentsline {section}{Solving Radicals and Exponential Equations -- NOTES}{9}
+\contentsline {subsection}{4-step process}{9}
+\contentsline {section}{Indices $>2$ -- NOTES}{10}
+\contentsline {section}{Extraneous Solutions}{12}
+\contentsline {section}{Equations with Rational Exponents}{13}
+\contentsline {section}{Equations with Rational Exponents -- Notes}{14}
+\contentsline {section}{Solving Radicals Quiz Review}{15}
+\contentsline {section}{Solving Radicals QUIZ -- Open Note}{17}
+\contentsline {section}{Logarithm Pre-Assessment}{19}
+\contentsline {section}{Meaning of Logarithms}{20}
+\contentsline {section}{Meaning of Logarithms -- Notes}{22}
+\contentsline {subsection}{Evaluating (easy) Logarithms}{24}
+\contentsline {section}{Properties of Logarithms}{27}
+\contentsline {subsection}{Proof of Properties of Logarithms}{28}
+\contentsline {section}{Change of Base Formula}{29}
+\contentsline {subsection}{Proof of Change of Base}{29}
+\contentsline {subsection}{Common Logs \& Natural Logs}{29}
+\contentsline {subsection}{Change of Base Practice}{30}
+\contentsline {section}{Review of Properties of Logarithms}{31}
+\contentsline {subsection}{Product Property}{31}
+\contentsline {subsection}{Quotient Property}{31}
+\contentsline {subsection}{Power Property}{31}
+\contentsline {subsection}{Condense}{31}
+\contentsline {subsection}{Change of Base Formula}{31}
+\contentsline {section}{Logs: The Inverse of Exponents}{32}
+\contentsline {subsection}{Proof}{32}
+\contentsline {section}{Using Logarithms to Solve Exponential Equations}{34}
+\contentsline {section}{Using Exponents to Solve Logarithmic Equations}{35}
+\contentsline {section}{Graphing Logarithmic Functions}{36}
+\contentsline {section}{Newton's Law of Cooling}{37}
+\contentsline {section}{Test Review}{38}
+\contentsline {section}{Test}{40}
+\contentsline {section}{Bell Work}{42}

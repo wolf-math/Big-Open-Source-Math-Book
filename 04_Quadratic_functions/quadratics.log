@@ -1,4 +1,4 @@
-This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2018.10.14)  13 FEB 2020 11:26
+This is XeTeX, Version 3.14159265-2.6-0.99998 (TeX Live 2017/Debian) (preloaded format=xelatex 2020.1.6)  13 FEB 2020 12:16
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -832,7 +832,7 @@ Normal \dimen register pool exhausted, switching to extended pool.
 \Gm@layoutvoffset=\dimen258
 \Gm@dimlist=\toks37
 )
-No file quadratics.aux.
+(./quadratics.aux)
 \openout1 = `quadratics.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 31.
@@ -855,6 +855,7 @@ LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 31.
 LaTeX Font Info:    ... okay on input line 31.
 \AtBeginShipoutBox=\box69
 Package hyperref Info: Link coloring OFF on input line 31.
+
 (/usr/share/texlive/texmf-dist/tex/latex/hyperref/nameref.sty
 Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
 
@@ -866,14 +867,12 @@ Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 31.
 LaTeX Info: Redefining \pageref on input line 31.
 LaTeX Info: Redefining \nameref on input line 31.
+
+(./quadratics.out) (./quadratics.out)
 \@outlinefile=\write5
 \openout5 = `quadratics.out'.
 
-
-
-Package hyperref Warning: Rerun to get /PageLabels entry.
-
-ABD: EveryShipout initializing macros
+ ABD: EveryShipout initializing macros
 *geometry* driver: auto-detecting
 *geometry* detected driver: xetex
 *geometry* verbose mode - [ preamble ] result:
@@ -2069,9 +2068,9 @@ Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 977.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 977.
  ) 
 Here is how much of TeX's memory you used:
- 24453 strings out of 493007
- 449989 string characters out of 6136718
- 546358 words of memory out of 5000000
+ 24459 strings out of 493007
+ 450079 string characters out of 6136720
+ 546357 words of memory out of 5000000
  27958 multiletter control sequences out of 15000+600000
  13173 words of font info for 59 fonts, out of 8000000 for 9000
  1348 hyphenation exceptions out of 8191
